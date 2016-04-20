@@ -9,9 +9,35 @@ Most of the behind-the-scenes code was lifted from [Quirk](https://github.com/St
 Basically all Eve does is match the requested operations onto a density matrix being computed classically.
 This is **exponentially expensive** in the number of qubits, but works fine for small systems.
 
-# A state being inferred:
+# Example
+
+A state being inferred:
 
 ![Quantum teleportation](/README_demo.gif)
+
+The program that Eve was running:
+
+    // [... defining gates ...]
+
+    while (true) {
+        let generatedEntropy = qpu.measureQubit(0);
+        if (Math.random() < 0.3) {
+            generatedEntropy = !generatedEntropy; // Mix it up some more.
+        }
+        if (generatedEntropy) {
+            qpu.applyOperation(SMALL_Y_ROT_1);
+            qpu.applyOperation(X0);
+        }
+        qpu.applyOperation(H0);
+
+        qpu.applyOperation(SMALL_X_ROT_2_WHEN_1);
+        qpu.applyOperation(CNOT_2_ONTO_3);
+        qpu.applyOperation(CONFOUNDING_X3);
+        let measureResult = qpu.measureQubit(3);
+        if (measureResult) {
+            qpu.applyOperation(X3); // Clear.
+        }
+    }
 
 # Building
 
