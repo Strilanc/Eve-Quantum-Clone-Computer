@@ -9,7 +9,7 @@ Most of the math and drawing code was lifted from [Quirk](https://github.com/Str
 Basically all Eve does is match the requested operations onto a density matrix being computed classically, and post-select the density matrix to match the results of requested measurements.
 Sometimes the measurement results are very informative, sometimes not informative at all, but gradually the details relevant to accurately predicting future measurement probabilities are revealed.
 
-Eve's inferrence process is exponentially expensive in the number of qubits, taking Θ(4ⁿ) time per operation due to the need to track the density matrix classically. The process becomes impractal after a dozen qubits, and truly intractable by fifty qubits.
+Eve's inferrence process is exponentially expensive in the number of qubits, taking Θ(4ⁿ) time per operation due to the need to operate on the inferred density matrix classically. The process becomes impractal after a dozen qubits, and truly intractable by fifty qubits.
 
 # Example
 
