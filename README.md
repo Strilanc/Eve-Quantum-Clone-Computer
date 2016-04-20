@@ -4,7 +4,7 @@ A toy demo of a quantum state being inferred by Eve as she performs actions requ
 
 [![Build Status](https://travis-ci.org/Strilanc/Eve-Quantum-Clone-Computer.svg?branch=master)](https://travis-ci.org/Strilanc/Eve-Quantum-Clone-Computer)
 
-Most of the math and drawing code was lifted from [Quirk](https://github.com/Strilanc/Quantum-Circuit-Inspector).
+*(Most of the math and drawing code was lifted from [Quirk](https://github.com/Strilanc/Quantum-Circuit-Inspector).)*
 
 All Eve does is start with a classically-stored maximally mixed density matrix, apply any requested operations onto that  inferred density matrix (and also onto the true state in the hypothetical actual quantum computer), and post-select the inferred density matrix to match the results of any requested measurements.
 Sometimes the measurement results are very informative, sometimes not informative at all, but gradually the details relevant to accurately predicting future measurement probabilities are incorporated into the inferred state.
