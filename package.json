@@ -1,0 +1,36 @@
+{
+  "name": "eve-quantum-clone-computer",
+  "title": "Eve's Quantum Clone Computer",
+  "description": "As you ask Eve to perform operations and measurements, she keeps track of what has and hasn't been ruled out about the current state. Sometimes she ends up knowing enough to make a near-perfet clone.",
+  "license": "Apache-2.0",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Strilanc/Eve-Quantum-Clone-Computer",
+  "bugs": {
+    "url": "https://github.com/Strilanc/Eve-Quantum-Clone-Computer/issues"
+  },
+  "devDependencies": {
+    "grunt": "~1.0.0",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-clean": "~1.0.0",
+    "grunt-contrib-concat": "~1.0.0",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-uglify": "~1.0.1",
+    "grunt-karma": "~0.12.2",
+    "grunt-traceur": "~0.5.5",
+    "karma": "~0.13.22",
+    "karma-chrome-launcher": "~0.2.2",
+    "karma-firefox-launcher": "~0.1.7",
+    "traceur": "0.0.104"
+  },
+  "scripts": {
+    "build": "grunt build-src",
+    "test": "grunt test",
+    "test-chrome": "grunt test-chrome",
+    "test-firefox": "grunt test-firefox",
+    "test-travis": "grunt test-travis"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Strilanc/Quantum-Circuit-Inspector.git"
+  }
+}
