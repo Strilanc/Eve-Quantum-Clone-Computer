@@ -15,7 +15,7 @@ A state being inferred:
 
 ![Quantum teleportation](/README_demo.gif)
 
-The program that Eve was running:
+The program that Eve was running on Alice's behalf:
 
     // [... defining gates ...]
 
