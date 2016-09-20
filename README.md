@@ -2,6 +2,8 @@
 
 A toy demo of a quantum state being inferred by Eve as she performs actions requested by Alice.
 
+See [the associated blog post](http://algorithmicassertions.com/2016/04/24/eves-quantum-clone-computer.html) for more explanation and justification for what's happening.
+
 [![Build Status](https://travis-ci.org/Strilanc/Eve-Quantum-Clone-Computer.svg?branch=master)](https://travis-ci.org/Strilanc/Eve-Quantum-Clone-Computer)
 
 *(Most of the math and drawing code was lifted from [Quirk](https://github.com/Strilanc/Quantum-Circuit-Inspector).)*
